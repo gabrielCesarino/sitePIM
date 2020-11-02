@@ -5,33 +5,148 @@
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    background-color: #9ACCCB;
+}
+
+main{
+    height: 800px;
+    margin: 0 auto;
+}
+
+header{
+    width: 980px;
+    margin: 0 auto;
+}
+
+#menu{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 295px;
+}
+.nav-home{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-home li{
+    margin-right: 65px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.nav-home li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 200ms;
+}
+
+.nav-home li a:hover{
+    color: #e5e0f2;
+    transition: 200ms;
+}
+
+.nav-home li:nth-child(4){
+    text-align: center;
+}
+
+#info-game{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 40px;
+}
+
+#info-game h2{
+    font-size: 38px;
+    color: #1d1d1d;
+    margin-bottom: 18px;
+}
+
+#info-game p{
+    display: block;
+    width: 450px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.container-info{
+    display: grid;
+    grid-template-columns: 450px 1fr 450px;
+    margin: 100px auto 0 auto; 
+    gap: 30px;
+    width: 980px;
+}
+
+.vl{
+    border-left: 3px solid black;
+    height: 600px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+#info-game td{
+    padding-bottom: 20px;
+    width: 300px;
+}
+
+#info-game td ul{
+    list-style: none;
+}
+
+
+/* PERSONAGENS*/
+
+
+#content-p{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.text-container h2{
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 0.2cm;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text-container p{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#personagens{
     background-image: url(assets/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    margin: 50px 0 auto;
 }
 
-main{
-    margin-top: 30px;
-}
-
-main h2{
-    text-align: center;
-    font-weight: 300;
-    font-size: 48px;
-    letter-spacing: 0.2cm;
-    margin-bottom: 100px;
-    color: white;
-}
-
-#players{
+.container-p{
     display: grid;
     align-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 560px 560px 560px;
-    margin: 0 80px;
+    margin: 0 80px; 
 }
 
 .player-card{
@@ -43,11 +158,6 @@ main h2{
     margin-bottom: 200px;
     border-radius: 5px;
 	transition-duration: 200ms;
-}
-
-.player-card:hover{
-	width: 325px;
-	transition-duration: 200ms
 }
 
 .player-card img{
@@ -66,3 +176,4 @@ main h2{
     font-weight: 300;
     margin-left: 1%;
 }
+
