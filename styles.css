@@ -10,25 +10,48 @@ body{
     background-color: #9ACCCB;
 }
 
-main{
-    height: 600px;
-    margin: 0 auto;
+header{
+    width: 100%;
+    position: absolute;
+    background-color: #ff4751;
 }
 
-header{
-    width: 980px;
-    margin: 0 auto;
+main{
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: #c20e1a;
+    height: 600px;
+}   
+
+main img{
+    max-width: 850px;
 }
 
 #menu{
-    margin: 20px auto;
+    width: 980px;
+    margin: 0px auto;
     display: flex;
     align-items: center;
 }
 
-.logo{
-    margin: 0 10%;
+#menu img{
+    width: 100px;
 }
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 500px;
+    padding-right: 100px;
+}
+
 .nav-home{
     display: flex;
     list-style: none;
@@ -153,7 +176,7 @@ header{
 .player-card{
     display: inline-block;
     width: 300px;
-    background-color: #2bb8b8;
+    background-color: #e11320;
     align-self: center;
     justify-self: center;
     margin-bottom: 200px;
@@ -161,9 +184,6 @@ header{
 	transition-duration: 200ms;
 }
 
-.player-card img{
-    width: 100%;
-}
 
 .player-info{
     width: 300px;
@@ -184,8 +204,19 @@ header{
     width: 100%;
     background-color: #fff;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;                                                                                                   
 }
+
+#content-regras{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/box.jpg);
+    background-position: center;
+    background-size: 900px; 
+}
+
 
 .container-regras{
     width: 980px;
@@ -218,9 +249,16 @@ header{
 }
 
 .container-regras li img{
-    width: 200px;
+    width: 225px;
 }
 
+.container-regras li:nth-child(2) img{
+    width: 300px;
+}
+
+.container-regras li:nth-child(1) img{
+    width: 300px;
+}
 
 /*FICHA TÉCNICA*/
 
@@ -236,10 +274,40 @@ header{
     width: 50%;
 }
 
+#content-ficha{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/fundao123.png);
+    background-size: cover;
+    background-position-y: -80px;
+}
+
 .ficha-container{
-    margin: 0 auto;
     width: 980px;
-    text-align: center;
+    margin: 0 auto;
+}
+
+#info-ficha{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+#info-ficha h2{
+    font-size: 38px;
+    color: #1d1d1d;
+    margin-bottom: 18px;
+}
+
+#info-ficha td{
+    display: block;
+    width: 600px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
 }
 
 /*CONTATO*/
@@ -291,28 +359,35 @@ header{
     width: 300px;
     padding: 10px;
     height: 35px;
-    background-color: #dcdcdc;
+    background-color: #fff;
+    border: 2px solid #ff4751;
+    border-radius: 5px;
     outline: none;
 }
 
 .contato-form form textarea{
     resize: none;
     display: block;
-    background-color: #dcdcdc;
+    background-color: #fff;
     width: 300px;
     height: 200px;
-
+    border: 2px solid #ff4751;
+    border-radius: 5px;
+    outline: none;
     padding: 10px;
 }
 
 .contato-form button{
     margin-top: 10px;
     padding: 4px;
-    border-radius: 0;
-
-    background-color: #77aa99;
+    border-radius: 3px;
+    background-color: #ff4751;
     color: #fff;
     font-size: 24px;
+}
+
+.contato-form button:hover{
+    cursor: pointer;
 }
 
 /*FOOTER*/
@@ -322,6 +397,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ff4751;
 }
 
 #footer-container{
